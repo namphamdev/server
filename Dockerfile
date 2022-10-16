@@ -10,4 +10,4 @@ RUN yarn install --production && yarn cache clean
 COPY . /app
 
 ENV NODE_ENV production
-ENTRYPOINT ["node", "-r", "esm", "./bin/server", "--port", "4200", "--domain", "tunnel.node.np-platform.com"]
+ENTRYPOINT ["node", "-r", "esm", "./bin/server", "--port", "4200", "--domain", "tunnel.node.np-platform.com", "--secure"]
